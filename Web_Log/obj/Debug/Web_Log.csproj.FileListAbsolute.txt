@@ -1,0 +1,8 @@
+d:\桌面文件\我的文档\visual studio 2013\Projects\Web_Log\Web_Log\bin\Web_Log.dll.config
+d:\桌面文件\我的文档\visual studio 2013\Projects\Web_Log\Web_Log\bin\Web_Log.dll
+d:\桌面文件\我的文档\visual studio 2013\Projects\Web_Log\Web_Log\bin\Web_Log.pdb
+d:\桌面文件\我的文档\visual studio 2013\Projects\Web_Log\Web_Log\obj\Debug\Web_Log.csprojResolveAssemblyReference.cache
+d:\桌面文件\我的文档\visual studio 2013\Projects\Web_Log\Web_Log\obj\Debug\Web_Log.Properties.Resources.resources
+d:\桌面文件\我的文档\visual studio 2013\Projects\Web_Log\Web_Log\obj\Debug\Web_Log.csproj.GenerateResource.Cache
+d:\桌面文件\我的文档\visual studio 2013\Projects\Web_Log\Web_Log\obj\Debug\Web_Log.dll
+d:\桌面文件\我的文档\visual studio 2013\Projects\Web_Log\Web_Log\obj\Debug\Web_Log.pdb
