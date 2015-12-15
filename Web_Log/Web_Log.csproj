@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\UserCenter.accdb" />
     <Content Include="Site.Master" />
     <Content Include="bin\Web_Log.dll.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -71,7 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="App_Data\UserInfo.accdb" />
     <Content Include="Article.aspx" />
     <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
     <Content Include="bin\Web_Log.dll" />

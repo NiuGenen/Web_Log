@@ -199,3 +199,21 @@
 .login_login:active{
     background-color:#000000;
 }
+
+.article_form_anounymous{
+    position:relative;
+    top:10px;
+    left:10px;
+    right:10px;
+}
+
+.article_form_login{
+    position:relative;
+    top:-10px;
+    left:10px;
+    right:10px;
+}
+
+.article_list{
+
+}

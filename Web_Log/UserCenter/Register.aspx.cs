@@ -13,7 +13,7 @@ namespace Web_Log.UserCenter
 {
     public partial class Register : System.Web.UI.Page
     {
-        private static string UserInfoDbPath = "~/App_Data/UserInfo.accdb";
+        private static string UserInfoDbPath = "~/App_Data/UserCenter.accdb";
         private string email;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -27,7 +27,7 @@ namespace Web_Log.UserCenter
 
             OleDbConnection myconn = DB.createConnection();
             myconn.Open();
-            string insertStr = "insert into Info values('" +
+            string insertStr = "insert into UserInfo values('" +
                 TextBoxUserName.Text + "','" +
                 TextBoxUserName.Text + "','" +
                 TextBoxPassWord.Text + "','" +

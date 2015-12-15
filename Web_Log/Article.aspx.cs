@@ -11,7 +11,18 @@ namespace Web_Log
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["UserName"] == null)
+            {
+                article_anounymous.Style.Add("display", "block");
+                article_login.Style.Add("display", "none");
+            }
+            else
+            {
+                article_login.Style.Add("display", "block");
+                article_anounymous.Style.Add("display", "none");
 
+                article_welcome.InnerText = "欢迎你，" + Session["UserName"].ToString();
+            }
         }
     }
 }
