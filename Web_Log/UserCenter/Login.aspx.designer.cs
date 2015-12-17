@@ -31,6 +31,15 @@ namespace Web_Log.UserCenter {
         protected global::System.Web.UI.WebControls.TextBox TextBoxLoginUserName;
         
         /// <summary>
+        /// LabelErrorUserNotExist 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelErrorUserNotExist;
+        
+        /// <summary>
         /// LabelLoginPassWord 控件。
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace Web_Log.UserCenter {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxLoginPassWord;
+        
+        /// <summary>
+        /// LabelErrorWrongPassWord 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelErrorWrongPassWord;
         
         /// <summary>
         /// RadioButtonRememberMe 控件。

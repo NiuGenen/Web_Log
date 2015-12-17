@@ -33,6 +33,8 @@ namespace Web_Log
         protected void Logout_click(object sender, EventArgs e)
         {
             Logout();
+
+            Response.Redirect("~/Main.aspx");
         }
 
         public void Logout()

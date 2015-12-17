@@ -12,10 +12,19 @@
             </div>
             <div id="article_login" runat="server" class="article_form_login">
                 <h3 id="article_welcome" runat="server">欢迎栏，显示用户名称</h3>
-                <hr />
-                <div>
-                    <asp:GridView runat="server"></asp:GridView>
-                </div>
+                <asp:Repeater runat="server" ID="repeaterform">
+                    <ItemTemplate>
+                        <tr>
+                            <td style="background-color: #808080">
+                                <asp:Label runat="server" ID="label1" Text='<%# Eval("UserName") %>'></asp:Label>
+                            </td>
+                            <td style="background-color: #808080">
+                                <asp:Label runat="server" ID="label2" Text='<%# Eval("Title") %>'></asp:Label>
+                            </td>
+                            <br />
+                        </tr>
+                    </ItemTemplate>
+                </asp:Repeater>
             </div>
         </div>
     </div>

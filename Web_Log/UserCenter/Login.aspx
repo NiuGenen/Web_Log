@@ -13,12 +13,18 @@
                 <div class="login_error">
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="TextBoxLoginUserName" ErrorMessage="请填写用户名"></asp:RequiredFieldValidator>
                 </div>
+                <div class="login_error">
+                    <asp:Label runat="server" ID="LabelErrorUserNotExist" Text="用户不存在" ForeColor="#ff0000" Visible="false"></asp:Label>
+                </div>
             </div>
             <div class="login_form">
                 <asp:Label ID="LabelLoginPassWord" runat="server" Text="　密码"></asp:Label>
                 <asp:TextBox ID="TextBoxLoginPassWord" runat="server" CssClass="login_textbox"></asp:TextBox>
                 <div class="login_error">
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="TextBoxLoginPassWord" ErrorMessage="请填写密码"></asp:RequiredFieldValidator>
+                </div>
+                <div class="login_error">
+                    <asp:Label runat="server" ID="LabelErrorWrongPassWord" Text="密码错误" ForeColor="#ff00000" Visible="false"></asp:Label>
                 </div>
             </div>
             <div class="login_form">
@@ -28,7 +34,7 @@
             </div>
             <div class="login_form">
                 <div class="login_login">
-                    <asp:Button ID="ButtonLoginSubmit" runat="server" BorderWidth="1px" BorderColor="#cccccc" Text="登录" OnClick="ButtonLoginSubmit_Click" />
+                    <asp:Button ID="ButtonLoginSubmit" runat="server" CssClass="login_loginbutton" Text="登录" OnClick="ButtonLoginSubmit_Click" />
                 </div>
             </div>
             <div class="login_register">
