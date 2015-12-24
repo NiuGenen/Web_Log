@@ -10,60 +10,42 @@
 namespace Web_Log {
     
     
-    public partial class Article {
+    public partial class View {
         
         /// <summary>
-        /// article_anounymous 控件。
+        /// ArticleName 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl article_anounymous;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ArticleName;
         
         /// <summary>
-        /// article_login 控件。
+        /// ArticleAuthor 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl article_login;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ArticleAuthor;
         
         /// <summary>
-        /// article_login_title 控件。
+        /// ArticleContent 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl article_login_title;
+        protected global::System.Web.UI.WebControls.TextBox ArticleContent;
         
         /// <summary>
-        /// article_welcome 控件。
+        /// ArticleEdit 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl article_welcome;
-        
-        /// <summary>
-        /// article_login_list 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl article_login_list;
-        
-        /// <summary>
-        /// repeaterform 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeaterform;
+        protected global::System.Web.UI.WebControls.Button ArticleEdit;
     }
 }

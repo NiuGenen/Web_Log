@@ -16,11 +16,11 @@ namespace Web_Log.UserCenter
         {
             DB.setDBPath(Page.Server.MapPath("/App_Data/UserCenter.accdb"));//设置数据库路径
 
-            HttpCookie cookie = Request.Cookies["RememberUser"];//是否记住用户
-            if(cookie!=null)
+            HttpCookie cookie = Request.Cookies["UserName"];//是否记住用户
+            if (cookie != null && TextBoxLoginUserName.Text == string.Empty)
             {
-                TextBoxLoginUserName.Text = cookie["UserName"];
-                TextBoxLoginPassWord.Text = cookie["PassWord"];
+                TextBoxLoginUserName.Text = HttpUtility.UrlDecode(Request.Cookies["UserName"].Value);
+                TextBoxLoginPassWord.Attributes.Add("Value",HttpUtility.UrlDecode(Request.Cookies["PassWord"].Value));
                 RadioButtonRememberMe.Checked = true;
             }
         }
@@ -48,14 +48,20 @@ namespace Web_Log.UserCenter
                         ((Site)Master).Login(username);//登录
                         if (IfRemember)//确认记住
                         {
-                            HttpCookie cookie = new HttpCookie("RememerUser");
-                            cookie["UserName"] = username;
-                            cookie["PassWord"] = password;
+                            HttpCookie cookie = new HttpCookie("UserName");
+                            cookie.Value = HttpUtility.UrlEncode(username);
+                            cookie.Expires = DateTime.MaxValue;
+                            Response.Cookies.Add(cookie);
+                            cookie = new HttpCookie("PassWord");
+                            cookie.Value = HttpUtility.UrlEncode(password);
                             cookie.Expires = DateTime.MaxValue;
                             Response.Cookies.Add(cookie);
                         }//否则清除cookie
-                        else 
-                            Request.Cookies.Remove("RememberUser");
+                        else
+                        {
+                            Request.Cookies.Remove("PassWord");
+                            Request.Cookies.Remove("UserName");
+                        }
                         //跳转页面
                         Response.Redirect("~/UserCenter/Manage.aspx");
                     }
@@ -67,7 +73,7 @@ namespace Web_Log.UserCenter
                 }
                 catch (NullReferenceException)//用户名不存在
                 {
-                    LabelErrorUserNotExist.Visible = false;
+                    LabelErrorWrongPassWord.Visible = false;
                     LabelErrorUserNotExist.Visible = true;
                     myconn.Close();
                     return;

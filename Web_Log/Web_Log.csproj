@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\UserCenter.accdb" />
+    <Content Include="Edit.aspx" />
     <Content Include="Site.Master" />
     <Content Include="bin\Web_Log.dll.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -112,6 +113,7 @@
     <Content Include="UserCenter\Manage.aspx" />
     <Content Include="UserCenter\RegisterSucceed.aspx" />
     <Content Include="UserCenter\Register.aspx" />
+    <Content Include="View.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +140,13 @@
     </Compile>
     <Compile Include="DB.cs">
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
@@ -186,6 +195,13 @@
     </Compile>
     <Compile Include="UserCenter\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

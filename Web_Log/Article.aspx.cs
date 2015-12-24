@@ -29,7 +29,6 @@ namespace Web_Log
 
                 article_welcome.InnerText = "欢迎你，" + Session["UserName"].ToString();
 
-
                 OleDbConnection myconn = DB.createConnection();
                 myconn.Open();
                 string selectStr = "select * from Article";
@@ -39,7 +38,38 @@ namespace Web_Log
                 repeaterform.DataSource = ds;
                 repeaterform.DataBind();
                 myconn.Close();
+            }
+        }
 
+        protected void repeaterform_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            Label username = e.Item.FindControl("labelusername") as Label;
+            if (e.CommandName == "title")
+            {
+                Response.Redirect("~/View.aspx?id=" + (string)e.CommandArgument);
+            }
+            else if (e.CommandName == "edit")
+            {
+                if (username.Text != Session["UserName"].ToString())
+                {
+                    Response.Write("<script>alert('您不是本篇文章的作者，无法完成操作')</script>");
+                }
+                else
+                {
+                    string id = e.CommandArgument as string;
+                    Response.Redirect("~/Edit.aspx?id=" + id);
+                }
+            }
+            else if (e.CommandName == "delete")
+            {
+                if (username.Text != Session["UserName"].ToString())
+                {
+                    Response.Write("<script>alert('您不是本篇文章的作者，无法完成操作')</script>");
+                }
+                else
+                {
+                    string title = e.CommandArgument as string;
+                }
             }
         }
     }

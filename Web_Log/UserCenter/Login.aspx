@@ -19,7 +19,7 @@
             </div>
             <div class="login_form">
                 <asp:Label ID="LabelLoginPassWord" runat="server" Text="　密码"></asp:Label>
-                <asp:TextBox ID="TextBoxLoginPassWord" runat="server" CssClass="login_textbox"></asp:TextBox>
+                <asp:TextBox ID="TextBoxLoginPassWord" runat="server" TextMode="Password" CssClass="login_textbox"></asp:TextBox>
                 <div class="login_error">
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="TextBoxLoginPassWord" ErrorMessage="请填写密码"></asp:RequiredFieldValidator>
                 </div>
