@@ -8,7 +8,6 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.OleDb;
 
-
 namespace Web_Log
 {
     public partial class Article : System.Web.UI.Page
@@ -57,7 +56,7 @@ namespace Web_Log
                 else
                 {
                     string id = e.CommandArgument as string;
-                    Response.Redirect("~/Edit.aspx?id=" + id);
+                    Response.Redirect("~/Edit.aspx?id=" + id + "&mode=EDIT");
                 }
             }
             else if (e.CommandName == "delete")
@@ -68,7 +67,23 @@ namespace Web_Log
                 }
                 else
                 {
-                    string title = e.CommandArgument as string;
+                    string id = e.CommandArgument as string;
+                    OleDbConnection myconn = DB.createConnection();
+                    myconn.Open();
+                    string selectStr = "delete from Article where ID=" + id;
+                    OleDbCommand cmd = new OleDbCommand(selectStr, myconn);
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (Exception)
+                    {
+                        Response.Write("<script>alert('删除失败')</script>");
+                        myconn.Close();
+                        return;
+                    }
+                    myconn.Close();
+                    Response.Redirect("~/Article.aspx");
                 }
             }
         }

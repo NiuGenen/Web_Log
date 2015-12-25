@@ -55,7 +55,7 @@ namespace Web_Log
             }
             else
             {
-                Response.Redirect("~/Edit.aspx?=" + USERID);
+                Response.Redirect("~/Edit.aspx?id=" + USERID +"&mode=EDIT");
             }
         }
     }

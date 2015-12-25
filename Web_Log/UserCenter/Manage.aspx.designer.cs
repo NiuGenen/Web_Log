@@ -13,12 +13,30 @@ namespace Web_Log.UserCenter {
     public partial class Manage {
         
         /// <summary>
-        /// LabelManageUserName 控件。
+        /// ManageUserName 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelManageUserName;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ManageUserName;
+        
+        /// <summary>
+        /// NewArticle 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button NewArticle;
+        
+        /// <summary>
+        /// ManageArticleList 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater ManageArticleList;
     }
 }
