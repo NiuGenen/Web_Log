@@ -57,6 +57,7 @@ namespace Web_Log
                 {
                     EditTitle.Text = "点击这里输入标题";
                     EditContent.Text = "点击这里输入文章内容";
+                    EditContent.Rows = 15;
                 }
             }
         }
@@ -91,10 +92,12 @@ namespace Web_Log
                     try
                     {
                         cmd.ExecuteNonQuery();
-                        Response.Redirect("~/UserCenter/Manage.aspx");
+                        myconn.Close();
+                        Response.Redirect("~/UserCenter/Manage.aspx?username="+Session["UserName"].ToString());
                     }
                     catch (Exception)
                     {
+                        myconn.Close();
                         Response.Write("<script>alert('保存失败')</script>");
                     }
                 }

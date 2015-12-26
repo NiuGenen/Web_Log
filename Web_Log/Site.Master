@@ -14,9 +14,9 @@
     <form runat="server">
         <div class="upperhead">
             <a class="upperhead_link_main" runat="server" href="~/Main.aspx">Web Log</a>
-            <a class="upperhead_link_other" runat="server" href="~/Main.aspx">Home</a>
+            <asp:LinkButton CssClass="upperhead_link_other" runat="server" OnClick="UserCenter_click">Home</asp:LinkButton>
             <a class="upperhead_link_other" runat="server" href="~/Article.aspx">Article</a>
-            <a class="upperhead_link_other" runat="server" href="~/About.aspx">About</a>
+            <a class="upperhead_link_other" runat="server" href="~/Album.aspx">Album</a>
             <a class="upperhead_link_other" runat="server" href="~/Contact.aspx">Contract</a>
             <div id="annonymous" runat="server">
                 <ul class="upperhead_login_ul">
@@ -26,7 +26,7 @@
             </div>
             <div id="login" runat="server">
                 <ul class="upperhead_login_ul">
-                    <li><a runat="server" href="~/UserCenter/Manage.aspx" class="upperhead_link_login">个人中心</a></li>
+                    <li><asp:LinkButton runat="server" OnClick="UserCenter_click" CssClass="upperhead_link_login">个人中心</asp:LinkButton></li>
                     <li><asp:LinkButton runat="server" Text="注销" OnClick="Logout_click" CssClass="upperhead_link_login"></asp:LinkButton></li>
                 </ul>
             </div>

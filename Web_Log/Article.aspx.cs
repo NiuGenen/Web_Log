@@ -14,35 +14,39 @@ namespace Web_Log
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DB.setDBPath(Page.Server.MapPath("/App_Data/UserCenter.accdb"));
-
-            if (Session["UserName"] == null)
+            if (!IsPostBack)
             {
-                article_anounymous.Style.Add("display", "block");
-                article_login.Style.Add("display", "none");
-            }
-            else
-            {
-                article_login.Style.Add("display", "block");
-                article_anounymous.Style.Add("display", "none");
+                DB.setDBPath(Page.Server.MapPath("/App_Data/UserCenter.accdb"));
 
-                article_welcome.InnerText = "欢迎你，" + Session["UserName"].ToString();
+                if (Session["UserName"] == null)
+                {
+                    article_anounymous.Style.Add("display", "block");
+                    article_login.Style.Add("display", "none");
+                }
+                else
+                {
+                    article_login.Style.Add("display", "block");
+                    article_anounymous.Style.Add("display", "none");
 
-                OleDbConnection myconn = DB.createConnection();
-                myconn.Open();
-                string selectStr = "select * from Article";
-                OleDbDataAdapter oda = new OleDbDataAdapter(selectStr, myconn);
-                DataSet ds = new DataSet();
-                oda.Fill(ds);
-                repeaterform.DataSource = ds;
-                repeaterform.DataBind();
-                myconn.Close();
+                    article_welcome.InnerText = "欢迎你，" + Session["UserName"].ToString();
+
+                    OleDbConnection myconn = DB.createConnection();
+                    myconn.Open();
+                    string selectStr = "select * from Article";
+                    OleDbDataAdapter oda = new OleDbDataAdapter(selectStr, myconn);
+                    DataSet ds = new DataSet();
+                    oda.Fill(ds);
+                    repeaterform.DataSource = ds;
+                    repeaterform.DataBind();
+
+                    myconn.Close();
+                }
             }
         }
 
         protected void repeaterform_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-            Label username = e.Item.FindControl("labelusername") as Label;
+            LinkButton username = e.Item.FindControl("labelusername") as LinkButton;
             if (e.CommandName == "title")
             {
                 Response.Redirect("~/View.aspx?id=" + (string)e.CommandArgument);
@@ -85,6 +89,11 @@ namespace Web_Log
                     myconn.Close();
                     Response.Redirect("~/Article.aspx");
                 }
+            }
+            else if(e.CommandName == "user")
+            {
+                string visitname = e.CommandArgument as string;
+                Response.Redirect("~/UserCenter/Manage.aspx?username=" + visitname);
             }
         }
     }

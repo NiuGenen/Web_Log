@@ -2,8 +2,10 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div>
-        <p>
-            这里有联系方式
+        <h1>联系作者</h1>
+        <hr />
+        <p style="font-family:'Microsoft YaHei UI'">
+            - 然而高冷地没有留下联系方式 -
         </p>
     </div>
 </asp:Content>

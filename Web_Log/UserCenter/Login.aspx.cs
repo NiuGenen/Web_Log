@@ -63,7 +63,8 @@ namespace Web_Log.UserCenter
                             Request.Cookies.Remove("UserName");
                         }
                         //跳转页面
-                        Response.Redirect("~/UserCenter/Manage.aspx");
+                        Response.Redirect("~/UserCenter/Manage.aspx?username="+username);
+
                     }
                     else//密码错误
                     {

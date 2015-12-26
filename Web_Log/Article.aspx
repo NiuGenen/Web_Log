@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <div>
-            <h1>文章列表</h1>
+            <h1>所有文章列表</h1>
             <hr />
         </div>
         <div style="position: relative">
@@ -30,7 +30,7 @@
                                     <asp:LinkButton runat="server" ID="Title" CssClass="article_title" CommandName="title" CommandArgument='<%#Eval("ID") %>'><%#Eval("Title") %></asp:LinkButton>
                                 </td>
                                 <td class="article_repeaterform_author">
-                                    <asp:Label runat="server" ID="labelusername" Text='<%# Eval("UserName") %>' />
+                                    <asp:LinkButton runat="server" ID="labelusername" Text='<%# Eval("UserName") %>' CssClass="article_title" CommandName="user" CommandArgument='<%#Eval("UserName") %>' />
                                 </td>
                                 <td class="article_repeaterform_edit">
                                     <asp:LinkButton runat="server" ID="Edit" CssClass="article_edit_and_delete" CommandName="edit" CommandArgument='<%# Eval("ID") %>'>[编辑]</asp:LinkButton>

@@ -7,108 +7,90 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace Web_Log {
+namespace Web_Log.UserCenter {
     
     
-    public partial class View {
+    public partial class LeftMessage {
         
         /// <summary>
-        /// ArticleName 控件。
+        /// LeftMessageTitle 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ArticleName;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LeftMessageTitle;
         
         /// <summary>
-        /// ArticleAuthor 控件。
+        /// LeftMessageBolck 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ArticleAuthor;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LeftMessageBolck;
         
         /// <summary>
-        /// ArticleEdit 控件。
+        /// LeftMessageList 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ArticleEdit;
+        protected global::System.Web.UI.WebControls.Repeater LeftMessageList;
         
         /// <summary>
-        /// ArticleContent 控件。
+        /// LeftMessageButton 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ArticleContent;
+        protected global::System.Web.UI.WebControls.Button LeftMessageButton;
         
         /// <summary>
-        /// ViewRemarkList 控件。
+        /// LeftMessageBoxUp 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater ViewRemarkList;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LeftMessageBoxUp;
         
         /// <summary>
-        /// RemarkButton 控件。
+        /// LeftMessageTextBox 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button RemarkButton;
+        protected global::System.Web.UI.WebControls.TextBox LeftMessageTextBox;
         
         /// <summary>
-        /// IRemarkLine 控件。
+        /// LeftMessageBoxDown 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl IRemarkLine;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LeftMessageBoxDown;
         
         /// <summary>
-        /// IRemarkContent 控件。
+        /// LeftMessageConfirm 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IRemarkContent;
+        protected global::System.Web.UI.WebControls.Button LeftMessageConfirm;
         
         /// <summary>
-        /// IRemarkLine2 控件。
+        /// LeftMessafeCancle 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl IRemarkLine2;
-        
-        /// <summary>
-        /// IRemarkConfirm 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button IRemarkConfirm;
-        
-        /// <summary>
-        /// IRemarkCancel 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button IRemarkCancel;
+        protected global::System.Web.UI.WebControls.Button LeftMessafeCancle;
     }
 }

@@ -58,8 +58,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Album\1\3.jpg" />
+    <Content Include="Album\444\2_%281%29.jpg" />
+    <Content Include="Album\444\2_%282%29.jpg" />
+    <Content Include="Album\444\2_%283%29.jpg" />
+    <Content Include="Album\牛根\1_%281%29.jpg" />
+    <Content Include="Album\牛根\1_%282%29.jpg" />
+    <Content Include="Album\牛根\1_%283%29.jpg" />
+    <Content Include="Album\牛根\1_%284%29.jpg" />
+    <Content Include="Album\牛根\1_%285%29.jpg" />
+    <Content Include="Album\牛根\1_%286%29.jpg" />
     <Content Include="App_Data\UserCenter.accdb" />
     <Content Include="Edit.aspx" />
+    <Content Include="Image.aspx" />
     <Content Include="Site.Master" />
     <Content Include="bin\Web_Log.dll.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -72,7 +83,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="Album.aspx" />
     <Content Include="Article.aspx" />
     <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
     <Content Include="bin\Web_Log.dll" />
@@ -109,20 +120,22 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="StyleSheet.css" />
+    <Content Include="UserCenter\LeftMessage.aspx" />
     <Content Include="UserCenter\Login.aspx" />
     <Content Include="UserCenter\Manage.aspx" />
     <Content Include="UserCenter\RegisterSucceed.aspx" />
     <Content Include="UserCenter\Register.aspx" />
+    <Content Include="UserCenter\UserInfoChange.aspx" />
     <Content Include="View.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Album.aspx.cs">
+      <DependentUpon>Album.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Album.aspx.designer.cs">
+      <DependentUpon>Album.aspx</DependentUpon>
     </Compile>
     <Compile Include="Article.aspx.cs">
       <DependentUpon>Article.aspx</DependentUpon>
@@ -148,6 +161,13 @@
     <Compile Include="Edit.aspx.designer.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Image.aspx.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Image.aspx.designer.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -167,6 +187,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserCenter\LeftMessage.aspx.cs">
+      <DependentUpon>LeftMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCenter\LeftMessage.aspx.designer.cs">
+      <DependentUpon>LeftMessage.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserCenter\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -195,6 +222,13 @@
     </Compile>
     <Compile Include="UserCenter\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCenter\UserInfoChange.aspx.cs">
+      <DependentUpon>UserInfoChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCenter\UserInfoChange.aspx.designer.cs">
+      <DependentUpon>UserInfoChange.aspx</DependentUpon>
     </Compile>
     <Compile Include="View.aspx.cs">
       <DependentUpon>View.aspx</DependentUpon>

@@ -7,108 +7,144 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace Web_Log {
+namespace Web_Log.UserCenter {
     
     
-    public partial class View {
+    public partial class UserInfoChange {
         
         /// <summary>
-        /// ArticleName 控件。
+        /// userinfochangetitle 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ArticleName;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl userinfochangetitle;
         
         /// <summary>
-        /// ArticleAuthor 控件。
+        /// OldPassWord 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ArticleAuthor;
+        protected global::System.Web.UI.WebControls.Label OldPassWord;
         
         /// <summary>
-        /// ArticleEdit 控件。
+        /// TextBoxOldPassWord 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ArticleEdit;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxOldPassWord;
         
         /// <summary>
-        /// ArticleContent 控件。
+        /// LabelOlePassWordWrong 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ArticleContent;
+        protected global::System.Web.UI.WebControls.Label LabelOlePassWordWrong;
         
         /// <summary>
-        /// ViewRemarkList 控件。
+        /// ChangePassWord 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater ViewRemarkList;
+        protected global::System.Web.UI.WebControls.Label ChangePassWord;
         
         /// <summary>
-        /// RemarkButton 控件。
+        /// TextBoxChangePassWord 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button RemarkButton;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxChangePassWord;
         
         /// <summary>
-        /// IRemarkLine 控件。
+        /// ChangePassWordConfirm 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl IRemarkLine;
+        protected global::System.Web.UI.WebControls.Label ChangePassWordConfirm;
         
         /// <summary>
-        /// IRemarkContent 控件。
+        /// TextBoxChangePassWordConfirm 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IRemarkContent;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxChangePassWordConfirm;
         
         /// <summary>
-        /// IRemarkLine2 控件。
+        /// ChangeLabelSex 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl IRemarkLine2;
+        protected global::System.Web.UI.WebControls.Label ChangeLabelSex;
         
         /// <summary>
-        /// IRemarkConfirm 控件。
+        /// RadioButtonListChangeSex 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button IRemarkConfirm;
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonListChangeSex;
         
         /// <summary>
-        /// IRemarkCancel 控件。
+        /// ChangeLabelAge 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button IRemarkCancel;
+        protected global::System.Web.UI.WebControls.Label ChangeLabelAge;
+        
+        /// <summary>
+        /// TextBoxChangeAge 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxChangeAge;
+        
+        /// <summary>
+        /// ChangeLabelEmail 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ChangeLabelEmail;
+        
+        /// <summary>
+        /// TextBoxChangeEmail 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxChangeEmail;
+        
+        /// <summary>
+        /// ButtonSubmitChange 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonSubmitChange;
     }
 }
