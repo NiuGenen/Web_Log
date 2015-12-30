@@ -102,12 +102,18 @@
         color: #ffffff;
     }
 
+
+
+
 .maincontent_site {
     position: absolute;
     top: 60px;
     left: 10px;
     right: 10px;
 }
+
+
+
 
 .register_form {
     position: relative;
@@ -138,6 +144,10 @@
     border: 1px solid #cccccc;
 }
 
+
+
+
+
 .main_p {
     color: #808080;
     text-indent: 20px;
@@ -150,6 +160,10 @@
     left: 0;
     right: 0;
 }
+
+
+
+
 
 .login_form {
     position: relative;
@@ -189,13 +203,614 @@
         padding: 2px;
     }
 
-.login_login{
-    position:absolute;
-    top:10px;
-    left:60px;
+.login_login {
+    position: absolute;
+    top: 10px;
+    left: 60px;
 }
 
-.login_login:hover,
-.login_login:active{
-    background-color:#000000;
+.login_loginbutton {
+    border-style: none;
+    height: 22px;
+    width: 44px;
 }
+
+    .login_loginbutton:hover {
+        color: #eeeeee;
+        background-color: #111111;
+    }
+
+    .login_loginbutton:active {
+        color: #ffffff;
+        background-color: #000000;
+    }
+
+
+
+
+
+.article_form_anounymous {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.article_form_login {
+    position: relative;
+    top: -10px;
+    left: 10px;
+    right: -10px;
+}
+
+.article_table {
+    border: 1px;
+    width: 60%;
+    border-color: #dddddd;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.article_repeaterform_title {
+    text-align: center;
+    background-color: #ffffff;
+    width: 50%;
+    color: #000000;
+}
+
+.article_repeaterform_author {
+    text-align: center;
+    background-color: #ffffff;
+    width: 20%;
+    color: #000000;
+}
+
+.article_repeaterform_edit {
+    text-align: center;
+    background-color: #ffffff;
+    width: 30%;
+    color: #000000;
+}
+
+.article_title {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
+
+    .article_title:hover,
+    .article_title:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.article_repeaterform_header {
+    font-family: 'Microsoft YaHei UI';
+    font-size: 20px;
+}
+
+.article_edit_and_delete {
+    text-decoration: none;
+    color: #000000;
+}
+
+    .article_edit_and_delete:hover,
+    .article_edit_and_delete:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+
+
+
+
+
+
+.view_edit_button {
+    border-width: 0px;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    position: relative;
+    left: 49%;
+}
+
+    .view_edit_button:hover,
+    .view_edit_button:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.view_title {
+    position: relative;
+    text-align: center;
+}
+
+.view_content {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    right: 20%;
+}
+
+.view_text_content {
+    position: relative;
+    left: 0;
+    width: 100%;
+    right: 0;
+    border: 0px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 15px;
+    text-indent: 2em;
+}
+
+.view_remarklist {
+    position: relative;
+    background-color: #000000;
+    color: #000000;
+    width: 100%;
+    border: 1px;
+    border-color: #ff0000;
+}
+
+.view_remarklist_header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 20px;
+}
+
+.view_remarklist_username {
+    background-color: #ffffff;
+    text-align: center;
+    width: 20%;
+}
+
+.view_remarklist_remarkcontent {
+    background-color: #ffffff;
+    text-align: left;
+    text-indent: 2em;
+    width: 60%;
+}
+
+.view_remarklist_time {
+    background-color: #ffffff;
+    text-align: left;
+    width: 20%;
+}
+
+.view_remarkbutton {
+    position: relative;
+    border: 2px;
+    border-style: dashed;
+    border-color: #000000;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 15px;
+}
+
+    .view_remarkbutton:hover,
+    .view_remarkbutton:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.view_remark_textbox {
+    position: relative;
+    padding: 5px;
+    font-family: 'Microsoft YaHei UI';
+    border-style: double;
+    border-width: 1px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.view_remarkconfirm_button {
+    position: relative;
+    border: 2px;
+    border-style: dashed;
+    border-color: #000000;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 15px;
+}
+
+.view_remarkcancel_button {
+    position: relative;
+    left: 5px;
+    border: 2px;
+    border-style: dashed;
+    border-color: #000000;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 15px;
+}
+
+    .view_remarkconfirm_button:hover,
+    .view_remarkconfirm_button:active,
+    .view_remarkcancel_button:hover,
+    .view_remarkcancel_button:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+
+
+
+
+.edit_title {
+    font-family: 'Microsoft YaHei UI';
+    font-size: 30px;
+    border-style: none;
+    border: 1px;
+    border-color: #ffffff;
+    border-style: dashed;
+}
+
+    .edit_title:hover,
+    .edit_title:active {
+        border-color: #000000;
+    }
+
+.edit_save {
+    position: relative;
+    top: 5px;
+}
+
+.edit_save_button {
+    border: 2px;
+    border-color: #000000;
+    border-style: dashed;
+    background-color: #ffffff;
+}
+
+    .edit_save_button:hover,
+    .edit_save_button:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.edit_text_content {
+    position: relative;
+    left: 10%;
+    width: 70%;
+    border: 10px;
+    border-color: #bbbbbb;
+    border-style: dashed;
+    font-family: 'Microsoft YaHei UI';
+    font-size: 15px;
+    text-indent: 2em;
+}
+
+
+
+
+
+
+
+.manage_whole_table {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.manage_table {
+    position: relative;
+    width: 100%;
+    border: 1px;
+    border-color: #000000;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.manage_title {
+    position: relative;
+    width: 70%;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.manage_edit {
+    position: relative;
+    width: 30%;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.manage_linkbutton {
+    text-decoration: none;
+    color: #000000;
+}
+
+    .manage_linkbutton:hover,
+    .manage_linkbutton:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.manage_newarticle_button {
+    border: 0;
+    position: relative;
+    width: 20%;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px;
+    border-style: dashed;
+    border-color: #000000;
+}
+
+    .manage_newarticle_button:hover,
+    .manage_newarticle_button:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.manage_article_block {
+    position: relative;
+    width: 60%;
+}
+
+.manage_album_block {
+    position: relative;
+    width: 60%;
+}
+
+.manage_friend_block {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+}
+
+.manage_image {
+    width: 200px;
+    height: 200px;
+}
+
+.manage_addattentionbutton {
+    border: 2px;
+    border-color: #000000;
+    border-style: dashed;
+    background-color: #ffffff;
+}
+
+    .manage_addattentionbutton:hover,
+    .manage_addattentionbutton:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.manage_leftmessage {
+    position: relative;
+    left: 5px;
+    border: 2px;
+    border-color: #000000;
+    border-style: dashed;
+    background-color: #ffffff;
+}
+
+    .manage_leftmessage:hover,
+    .manage_leftmessage:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.manage_changeinfo {
+    background-color: #ffffff;
+    border: 2px;
+    position: relative;
+    border-color: #000000;
+    left: 5px;
+    border-style: dashed;
+}
+
+    .manage_changeinfo:hover,
+    .manage_changeinfo:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.manage_getimage {
+    padding-bottom: 2px;
+    background-color: #ffffff;
+}
+
+.manage_addimage {
+    position: relative;
+    left: 5px;
+    border: 2px;
+    border-color: #000000;
+    border-style: dashed;
+    background-color: #ffffff;
+}
+
+    .manage_addimage:hover,
+    .manage_addimage:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.manage_frinedlist {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    background-color: #bbbbbb;
+    color: #ffffff;
+}
+
+.manage_frinedlist_header {
+    font-family: 'Microsoft YaHei UI';
+    font-size: 20px;
+}
+
+.manage_friendlist_username_block {
+    width: 70%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.manage_friendlist_username_linkbutton {
+    text-decoration: none;
+    color: #bbbbbb;
+}
+
+    .manage_friendlist_username_linkbutton:hover,
+    .manage_friendlist_username_linkbutton:active {
+        color: #ffffff;
+        background-color: #000000;
+    }
+
+.manage_friendlist_online_block {
+    width: 30%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.manage_friendlist_online_label {
+    color: #bbbbbb;
+}
+
+
+
+
+
+.album_table {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.album_username {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    width: 20%;
+}
+
+.album_username_linkbutton {
+    text-decoration: none;
+    color: #000000;
+}
+
+    .album_username_linkbutton:hover,
+    .album_username_linkbutton:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.album_image {
+    background-color: #ffffff;
+    width: 80%;
+}
+
+
+
+
+
+
+
+.leftmessage_block {
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+.leftmessage_messagetable {
+    background-color: #000000;
+    width: 100%;
+    color: #ffffff;
+}
+
+.leftmessage_messagetable_header {
+    font-family: 'Microsoft YaHei UI';
+    font-size: 20px;
+}
+
+.leftmessage_messagetable_username {
+    width: 20%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.leftmessage_messagetable_content {
+    width: 50%;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.leftmessage_messagetable_time {
+    width: 20%;
+    text-align: left;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.leftmessage_messagetable_reply {
+    width: 10%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.leftmessage_messagetable_linkbutton {
+    text-decoration: none;
+    color: #000000;
+}
+
+    .leftmessage_messagetable_linkbutton:hover,
+    .leftmessage_messagetable_linkbutton:active {
+        color: #ffffff;
+        background-color: #000000;
+    }
+
+.leftmessage_leftmessafebutton {
+    border: 2px;
+    border-style: dashed;
+    background-color: #ffffff;
+}
+
+    .leftmessage_leftmessafebutton:hover,
+    .leftmessage_leftmessafebutton:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.leftmessage_leftmessagetextbox {
+    width: 100%;
+    border-style: dashed;
+    border-width: 2px;
+}
+
+.leftmessage_leftmessageconfirm {
+    border: 2px;
+    border-style: dashed;
+    background-color: #ffffff;
+}
+
+    .leftmessage_leftmessageconfirm:hover,
+    .leftmessage_leftmessageconfirm:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.leftmessage_leftmessagecancel {
+    border: 2px;
+    border-style: dashed;
+    background-color: #ffffff;
+}
+
+    .leftmessage_leftmessagecancel:hover,
+    .leftmessage_leftmessagecancel:active {
+        background-color: #000000;
+        color: #ffffff;
+    }
